@@ -80,3 +80,6 @@ with open(File_name,"w",encoding='UTF-8') as f:
         name= (first_name + ' ' + last_name).strip()
         writer.writerow([name,username,user.id,user.access_hash,group.title])      
 print(gr+'[+] Berhasil Scrape Member.')
+
+client.disconnect()
+sys.exit()
