@@ -68,7 +68,7 @@ group_entity = client.get_input_entity(group)
 users = pd.read_csv(member_file)
 
 print('\n')
-mode = int(input("1. add dengan Username\n2. add dengan User Id\nPilih mode : "))
+mode = int(input("1. add dengan User Id\n2. add dengan Username\nPilih mode : "))
 
 #Calculating the time to wait for FloodWaitError
 def Hitung_waktu (e):
