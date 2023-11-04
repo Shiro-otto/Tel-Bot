@@ -42,8 +42,7 @@ def login_api():
 
     print(Fore.GREEN + "Login Berhasil !")
     print(Fore.GREEN + "Telegram tersebut sudah siap digunakan!")
-    client.disconnect()
-    sys.exit()
+    
 
 print(Fore.LIGHTMAGENTA_EX + "Silahkan login telegram anda di bawah")
 check_point = input(Fore.GREEN + "apakah telegram tersebut memiliki api id ?\nyes [y] / no [n]  : ")
@@ -66,9 +65,10 @@ else:
     if not client.is_user_authorized():
          client.send_code_request(phone)
          client.sign_in(phone, input('40779'))
-    
-    print(Fore.GREEN + "Login Berhasil !")
-    print(Fore.GREEN + "Telegram tersebut sudah siap digunakan!")
 
+
+client.disconnect()
+sys.exit()
+    
 print(Fore.WHITE)
 #tanjungbalai asahan
