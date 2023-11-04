@@ -55,8 +55,6 @@ try:
 		banner()
 		print("""
 			
-	( --config  / -c ) setup api configration
-	( --merge   / -m ) merge 2 .csv files in one 
 	( --update  / -u ) update tool to latest version
 	( --install / -i ) install requirements
 	( --help    / -h ) show this msg 
@@ -67,6 +65,3 @@ try:
 		print(gr+'$ python3 setup.py -h'+'\n')
 except IndexError:
 	print('\n'+gr+'['+re+'!'+gr+']'+cy+' no argument given : '+ sys.argv[1])
-	print(gr+'['+re+'!'+gr+']'+cy+' for help use : ')
-	print(gr+'['+re+'!'+gr+']'+cy+' https://github.com/th3unkn0n/TeleGram-Scraper#-how-to-install-and-use')
-	print(gr+'$ python3 setup.py -h'+'\n')
