@@ -1,10 +1,12 @@
 #AP
 
 """
+Authon : Apin (D3)
+github Programming based on python
 
-you can re run setup.py 
-if you have added some wrong value
-
+kalo pinter silahkan edit
+kalo ga paham ya berarti otak lu ga nyampe
+terima kasih sudah menggunakan program saya
 """
 re="\033[1;31m"
 gr="\033[1;32m"
@@ -35,10 +37,9 @@ def requirements():
 
 
 def update_tool():
-	import requests as r
 	banner()
 	#print(gr+'['+cy+'+'+gr+']'+cy+' removing old files ...')
-	#os.system('del *.py');time.sleep(3)
+	os.system('del setup.py');time.sleep(3)
 	print(gr+'['+cy+'+'+gr+']'+cy+' getting latest files ...')
 	os.system("""
 		curl -s -O https://raw.githubusercontent.com/Shiro-otto/Tel-Bot/main/setup.py chmod 777 *.py
