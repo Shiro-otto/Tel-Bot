@@ -1,4 +1,4 @@
-import os
+import os,sys
 import getpass
 from turtle import clear
 os.system('')
