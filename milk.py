@@ -6,6 +6,8 @@ import csv
 from pathlib import Path
 import time
 
+#program ini di buat khusus untuk global check
+#tidak ada yang mempunyai program ini untuk telegram add-scraping
 
 re="\033[1;31m"
 gr="\033[1;32m"
@@ -29,7 +31,7 @@ api_hash = '10error'
 phone = '+60000'
 name = ('')
 
-print(Fore.LIGHTYELLOW_EX + "program ini di buat khusus untuk global check")
+print(Fore.LIGHTYELLOW_EX + "Global Checking")
 
 while True :
     Name = input(Fore.GREEN + "Nama Telegram : ")
